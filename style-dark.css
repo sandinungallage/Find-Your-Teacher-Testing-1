@@ -1,0 +1,121 @@
+body{
+    background-color:rgb(30 27 27);
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.header-of-website{
+    display: flex;
+    position: relative;
+    width:100%;
+    min-width: 100%;
+    background-color:#fefeff4c;
+    margin-bottom:10px;
+    border:0;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    min-height: 50px;
+    height: 80px;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.237);
+}
+.column{
+    flex: 1;
+    text-align: center;
+    top: 10px;
+}
+#logo-col{
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.logo-section{
+    background-image: url(logo-logo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50%;
+    position: relative;
+}
+#homebtn,#teacherbtn,#institutionbtn,#about-usbtn{
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    border-radius: 8px;
+    margin: 0;
+}
+#homebtn:hover,#teacherbtn:hover,#institutionbtn:hover,#about-usbtn:hover{
+    background-color: rgba(240, 248, 255, 0.397);
+}
+#homedet,#teacherdet,#institutedet,#aboutusdet{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.name-div{
+    height: 40px;
+    bottom: 8px;
+}
+.name{
+    text-align: center;
+    text-decoration: solid;
+    font-size: medium;
+    font-weight: bold;
+    color: antiquewhite;
+    bottom:105px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.maindiv{
+    background-image:linear-gradient(#6b6bc7,#aa9c9c);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: max-content;
+    width:96%;
+    border: 0;
+    border-radius: 18px;
+    padding: 2%;
+}
+
+.head-div{
+    display: flex;
+    height: 400px;
+    position: relative;
+}
+.name-div{
+    flex: 1;
+    position: relative;
+    justify-content: center;
+    align-content: center;  
+}
+
+.footersection{
+    background-color: #000000;
+    box-shadow:-3px 3px 3px 3px #0000004f;
+    border: 0;
+    height:80px;
+    align-content:center;
+    justify-content:center;
+    text-align:center;  
+    position: relative;
+}
+.footer-div{
+    display: flex;
+    width: 96%;
+    height: 30px;
+    border: 0;
+    border-radius: 18px;
+    padding: 2%;
+    position: relative;
+}
+.contactinfo-div{
+    flex: 50%;
+    color: white;
+
+}
+.logo-footer-div{
+    flex: 50%;
+    color: white;
+}

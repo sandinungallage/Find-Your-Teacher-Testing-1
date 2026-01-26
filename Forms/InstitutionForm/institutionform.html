@@ -1,0 +1,278 @@
+<html>
+    <head>
+        <title>Institute Registration Form</title>
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="stylesheet" href="institution.css">
+    </head>
+    <body>
+        <header class="head-class">
+            <div class="head-div">
+                <div class="name-div">
+                <p class="name">Name Here</p>
+            </div>
+            <div class="logo-div">
+                <p class="logo">Logo is here</p>
+            </div>
+            </div>
+            
+        </header>
+        <br>
+        <div class="headercolumnsection">
+            <div class="headercolumn">
+                Home
+            </div>
+            <div class="headercolumn">
+                Teacher     
+            </div>
+            <div class="headercolumn">
+                Institution
+            </div>
+            <div class="headercolumn">
+                MyProfile
+            </div>
+            <div class="headercolumn">
+                Login
+            </div>
+        </div>
+        <br>
+        <center>
+            <div class="table-class">
+                <form action="#" name="" class="">
+                <table border="0">
+                    <h1>Institute Registration Form</h1>
+                    <tr>
+                        <td>Name with initials:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td><input type="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Contact No.:</td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Username:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type="password"></td>
+                    </tr>
+                    <tr>
+                        <td>Password Retype:</td>
+                        <td><input type="password"></td>
+                    </tr>
+                    <tr>
+                        <td>Institute website:</td>
+                        <td><input type="url"></td>
+                    </tr>
+                    <tr>
+                        <td>District:</td>
+                        <td>
+                            <select name="District">
+                                <option value=0>Select your District</option>
+                                <option value="Colombo">Colombo</option>
+                                <option value="Gampaha">Gampaha</option>
+                                <option value="Kalutara">Kalutara</option>
+                                <option value="Kandy">Kandy</option>
+                                <option value="Matale">Matale</option>
+                                <option value="Nuwara Eliya">Nuwara Eliya</option>
+                                <option value="Galle">Galle</option>
+                                <option value="Matara">Matara</option>
+                                <option value="Hambantota">Hambantota</option>
+                                <option value="Jaffna">Jaffna</option>
+                                <option value="Kilinochchi">Kilinochchi</option>
+                                <option value="Mannar">Mannar</option>
+                                <option value="Vavuniya">Vavuniya</option>
+                                <option value="Mullaitivu">Mullaitivu</option>
+                                <option value="Batticaloa">Batticaloa</option>
+                                <option value="Ampara">Ampara</option>
+                                <option value="Trincomalee">Trincomalee</option>
+                                <option value="Kurunegala">Kurunegala</option>
+                                <option value="Puttalam">Puttalam</option>
+                                <option value="Anuradhapura">Anuradhapura</option>
+                                <option value="Polonnaruwa">Polonnaruwa</option>
+                                <option value="Badulla">Badulla</option>
+                                <option value="Moneragala">Moneragala</option>
+                                <option value="Ratnapura">Ratnapura</option>
+                                <option value="Kegalle">Kegalle</option>
+                            
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">Subjects:</td>
+                        <td>
+                            <dl>
+                                <dt><input type="checkbox" value="Primary-Grades" id="pgrade"><b>Primary Grades</b></dt>
+                                <dv class="PrimaryGrades" id="primarygrades">
+                                <dd><input type="checkbox" value="Sinhala Language">Sinhala Language</dd>
+                                <dd><input type="checkbox" value="English Language">English</dd>
+                                <dd><input type="checkbox" value="Tamil Language">Tamil Language</dd>
+                                <dd><input type="checkbox" value="Tamil Secondary">Tamil Secondary</dd>
+                                <dd><input type="checkbox" value="Sinhala Secondary">Sinhala Secondary</dd>
+                                <dd><input type="checkbox" value="Mathematics">Mathematics</dd>
+                                <dd><input type="checkbox" value="Environment">Environment</dd>
+                                <dd><input type="checkbox" value="Catholicism">Catholicism</dd>
+                                <dd><input type="checkbox" value="Christianity">Christianity</dd>
+                                <dd><input type="checkbox" value="Buddhism">Buddhism</dd>
+                                <dd><input type="checkbox" value="Saivanvri">Saivanvri</dd>
+                                <dd><input type="checkbox" value="Islam">Islam</dd><br>
+                                </dv>
+                                <script>
+                                    var xvalue = 0;
+                                    if (xvalue===0){
+                                        document.getElementById('pgrade').onclick = function(){
+                                        document.getElementById('primarygrades').style.display = 'block';
+                                        xvalue = 1;
+                                    }
+                                    }
+                                    
+                                    if (xvalue===1){
+                                        document.getElementById('pgrade').onclick = function(){
+                                        document.getElementById('primarygrades').style.display = 'none';
+                                        xvalue = 0;
+                                    }
+                                    }
+                                </script>
+                                
+                                <dt><input type="checkbox" value="Grade-6-9"><b>Grade 6-9</b></dt>
+                                <div class="Grade6-9">
+                                <dd><input type="checkbox" value="Sinhala Language">Sinhala Language</dd>
+                                <dd><input type="checkbox" value="Tamil Language">Tamil Language</dd>
+                                <dd><input type="checkbox" value="Catholicism">Catholicism</dd>
+                                <dd><input type="checkbox" value="Christianity">Christianity</dd>
+                                <dd><input type="checkbox" value="Buddhism">Buddhism</dd>
+                                <dd><input type="checkbox" value="Islam">Islam</dd>
+                                <dd><input type="checkbox" value="Saivaneri">Saivaneri</dd>
+                                <dd><input type="checkbox" value="English Language">English Language</dd>
+                                <dd><input type="checkbox" value="Mathematics">Mathematics</dd>
+                                <dd><input type="checkbox" value="History">History</dd>
+                                <dd><input type="checkbox" value="Science">Science</dd>
+                                <dd><input type="checkbox" value="Health Science">Health Science</dd>
+                                <dd><input type="checkbox" value="Tamil Secondary">Tamil Secondary</dd>
+                                <dd><input type="checkbox" value="Sinhala Secondary">Sinhala Secondary</dd>
+                                <dd><input type="checkbox" value="Geography">Geography</dd>
+                                <dd><input type="checkbox" value="Civic Education">Civic Education</dd>
+                                <dd><input type="checkbox" value="Dancing">Dancing</dd>
+                                <dd><input type="checkbox" value="Western Music">Western Music</dd>
+                                <dd><input type="checkbox" value="Eastern Music">Eastern Music</dd>
+                                <dd><input type="checkbox" value="Art">Art</dd>
+                                <dd><input type="checkbox" value="Drama and Theatre">Drama and Theatre</dd><br>
+                                </div>
+                            
+                                <dt><input type="checkbox" value="Ordinary-Level"><b>Ordinary Level</b></dt>
+                                <div class="ordinarylevel">
+                                    <dd><input type="checkbox" value="Catholicism">Catholicism</dd>
+                                    <dd><input type="checkbox" value="Christianity">Christianity</dd>
+                                    <dd><input type="checkbox" value="Buddhism">Buddhism</dd>
+                                    <dd><input type="checkbox" value="Saivanvri">Saivanvri</dd>
+                                    <dd><input type="checkbox" value="Islam">Islam</dd>
+                                    <dd><input type="checkbox" value="Sinhala Language">Sinhala Language</dd>
+                                    <dd><input type="checkbox" value="English Language">English Language</dd>
+                                    <dd><input type="checkbox" value="Tamil Language">Tamil Language</dd>
+                                    <dd><input type="checkbox" value="Mathematics">Mathematics</dd>
+                                    <dd><input type="checkbox" value="History">History</dd>
+                                    <dd><input type="checkbox" value="Science">Science</dd>
+                                    <dd><input type="checkbox" value="Commerce">Commerce</dd>
+                                    <dd><input type="checkbox" value="Geography">Geography</dd>
+                                    <dd><input type="checkbox" value="Civic Education">Civic Education</dd>
+                                    <dd><input type="checkbox" value="Sinhala Secondary">Sinhala Secondary</dd>
+                                    <dd><input type="checkbox" value="Tamil Secondary">Tamil Secondary</dd>
+                                    <dd><input type="checkbox" value="French">French</dd>
+                                    <dd><input type="checkbox" value="German">German</dd>
+                                    <dd><input type="checkbox" value="Dancing">Dancing</dd>
+                                    <dd><input type="checkbox" value="Western Music">Western Music</dd>
+                                    <dd><input type="checkbox" value="Eastern Music">Eastern Music</dd>
+                                    <dd><input type="checkbox" value="Art">Art</dd>
+                                    <dd><input type="checkbox" value="Drama and Theatre">Drama and Theatre</dd>
+                                    <dd><input type="checkbox" value="Sinhala Literary">Sinhala Literary</dd>
+                                    <dd><input type="checkbox" value="English Literary">English Literary</dd>
+                                    <dd><input type="checkbox" value="ICT">ICT</dd>
+                                    <dd><input type="checkbox" value="Home Economics">Home Economics</dd>
+                                    <dd><input type="checkbox" value="Health Science">Health Science</dd>
+                                    <dd><input type="checkbox" value="Media Studies">Media Studies</dd><br>
+                                </div>
+        
+        
+        
+                                <dt><input type="checkbox" value="Advanced-Level"><b>Advanced Level</b></dt><br>
+                                <div class="advancedlevel">
+        
+                                <dd><input type="checkbox" value="Science"><b>Biology and Mathematics Stream</b></dd><br>
+                                <div class="bioscience">
+                                    <dd><input type="checkbox" value="Biology">Biology</dd>
+                                    <dd><input type="checkbox" value="Combined Mathematics">Combined Mathematics</dd>
+                                    <dd><input type="checkbox" value="Chemistry">Chemistry</dd>
+                                    <dd><input type="checkbox" value="Physics">Physics</dd>
+                                    <dd><input type="checkbox" value="ICT">ICT</dd><br>
+                                </div>
+                                
+        
+                                <dd><input type="checkbox" value="Commerce"><b>Commerce Stream</b></dd><br>
+                                <div class="Commercestream">
+                                <dd><input type="checkbox" value="Statistics">Statistics</dd>
+                                <dd><input type="checkbox" value="Business Studies">Business Studies</dd>
+                                <dd><input type="checkbox" value="Accounting">Accounting</dd>
+                                <dd><input type="checkbox" value="Economics">Economics</dd><br>
+                                </div>
+        
+                                <dd><input type="checkbox" value="Arts"><b>Arts</b></dd><br>
+                                <div class="artsstream">
+                                <dd><input type="checkbox" value="Geography">Geography</dd>
+                                <dd><input type="checkbox" value="Political Science">Political Science</dd>
+                                <dd><input type="checkbox" value="History">History</dd>
+                                <dd><input type="checkbox" value="Media and Studies">Media and Studies</dd>
+                                <dd><input type="checkbox" value="Buddhism">Buddhism</dd>
+                                <dd><input type="checkbox" value="Saivanvri">Saivanvri</dd>
+                                <dd><input type="checkbox" value="Islam">Islam</dd>
+                                <dd><input type="checkbox" value="Catholicism">Catholicism</dd>
+                                <dd><input type="checkbox" value="Christianity">Christianity</dd>
+                                <dd><input type="checkbox" value="Dancing">Dancing</dd>
+                                <dd><input type="checkbox" value="Western Music">Western Music</dd>
+                                <dd><input type="checkbox" value="Eastern Music">Eastern Music</dd>
+                                <dd><input type="checkbox" value="Art">Art</dd>
+                                <dd><input type="checkbox" value="Drama and Theatre">Drama and Theatre</dd>
+                                <dd><input type="checkbox" value="Sinhala Language">Sinhala Language</dd>
+                                <dd><input type="checkbox" value="English Language">English Language</dd>
+                                <dd><input type="checkbox" value="French">French</dd>
+                                <dd><input type="checkbox" value="German">German</dd>
+                                <dd><input type="checkbox" value="Japanese">Japanese</dd>
+                                </div>
+                                </div>
+        
+                                <tr>
+                                    <td valign="top">Medium:</td>
+                                    <td>
+                                        <dl>
+                                            <dt><input type="checkbox" name="Sinhala" value="Sinhala">Sinhala</dt>
+                                            <dt><input type="checkbox" name="Sinhala" value="English">English</dt>
+                                            <dt><input type="checkbox" name="Sinhala" value="Tamil">Tamil</dt>
+                                        </dl>
+                                    </td>
+                                </tr>    
+                        
+          
+                        </td>
+                    </tr>
+        
+                </table>
+                    <input type="submit" name="sub" value="submit"> 
+                    <input type="reset" name="clr" value="clear">
+                </form>
+        </center>
+    
+        <footer class="footersection">
+            <div class="footer-div">
+                <div class="contactinfo-div">
+                    Contact Us
+                </div>
+                <div class="emptydiv">
+        
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

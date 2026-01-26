@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="index.css" id="light-theme">
+        <link rel="stylesheet" href="index-dark.css" id="dark-theme">
+        <link rel="stylesheet" href="style.css" id="page-light">
+        <link rel="stylesheet" href="style-dark.css" id="page-dark">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="smalldisplay.css">
+        <script src="hover.js"></script>
+        <link rel="stylesheet" href="index-smalldisp.css">
+        <script src="Themeswitch.js"></script>
+    </head>
+<body style="transition: all 0.5s ease-in;">
+    <script>
+        document.body.style.opacity = 0;
+        function displaybody(){
+            document.body.style.opacity = 1;
+        }
+        setInterval(displaybody,300);
+    </script>
+    <header class="header-of-website" id="logo-col">
+        <div class="column">
+            <center>
+                            <div class="logo-section">
+
+            </div>
+            </center>
+
+        </div>
+        <div class="column" >
+            <div id="home-button">
+                <a href="index.html">
+                    <button id="homebtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                    <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
+                  </svg>
+                </button>    
+                </a>
+            </div>
+            <div id="homedet">
+                Home
+            </div>
+        </div>
+        <div class="column">
+            <div id="teacher-button">
+                <a href="#">
+                    <button id="teacherbtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                  </svg>
+                </button>
+                </a>
+            </div>
+            <div id="teacherdet">
+                Teachers
+            </div>
+        </div>
+        <div class="column">
+            <div id="institutions-button">
+                <a href="#">
+                    <button id="institutionbtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
+                    <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
+                  </svg>                    
+                </button>
+                </a>
+                
+            </div>
+            <div id="institutedet">
+                Institutions
+            </div>
+        </div>
+        <div class="column">
+            <div id="aboutus-button">
+                <a href="#">
+                    <button id="about-usbtn">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-file-earmark-person-fill" viewBox="0 0 16 16">
+                    <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755z"/>
+                  </svg> 
+                </button>
+                </a>
+            </div>
+            <div id="aboutusdet">
+                About us
+            </div>
+        </div>
+    </header>
+    <div class="welcome-area">
+        <div class="welcome-message-div">
+            <div id="message-01">
+                <span>
+                    Hello!!,<br>
+                    We are here to help you to find your Teacher.
+                </span>   
+            </div> 
+            <div id="message-02">
+                <span>
+                    Let's Find Your Teacher!!!
+                </span>
+            </div>
+            <div id="image-div-of-firstdiv">
+                <img src="learnimage02.png" alt="image" width="auto" height="auto">
+            </div>
+            <script>
+                var first_content = document.getElementById('message-01');
+                var second_content = document.getElementById('message-02');
+                var image_content = document.getElementById('image-div-of-firstdiv');
+                setTimeout(function(){
+                    first_content.style.opacity = 0;
+                    second_content.style.opacity = 1;
+                    second_content.style.transform = 'translateX(2%)';
+                    image_content.style.opacity = 1;
+                    image_content.style.transform = 'translateX(0%)';
+                }, 4000);
+            </script>
+        </div>
+    </div>
+    <div class="login-buttons">
+        <div class="buttons">
+            <div class="button-01">
+                <button class="login-button">
+                    Login
+                </button>
+            </div><br>
+            <div class="button-02">
+                <button class="register-button" id="registerbtn">
+                    Register
+                </button>
+                <script>
+                    var docbtn = document.getElementById("registerbtn");
+                    setTimeout(function(){
+                        docbtn.style.opacity = 1;
+                    }, 1000);
+                </script>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+    </script>
+    <div class="counting-details-div">
+        <div class="card1" id="card1">
+            <div class="card1-details" id="card1-details">
+              0
+            </div>
+            
+        </div>
+        <div class="card2" id="card2">
+            <div class="card2-details" id="card2-details">
+               0
+            <br>Institutions 
+            </div>    
+        </div>
+        <div class="card3" id="card3">
+            <div class="card3-details" id="card3-details">
+               0
+            <br>Students 
+            </div>
+            
+        </div>
+        <script>
+            var card1 = document.getElementById('card1');
+            var card2 = document.getElementById('card2');
+            var card3 = document.getElementById('card3');
+
+            setTimeout(function(){
+                card1.style.transform = 'translateY(0%)';
+                card2.style.transform = 'translateY(0%)';
+                card3.style.transform = 'translateY(0%)';
+                card1.style.opacity = 1;
+                card2.style.opacity = 1;
+                card3.style.opacity = 1;
+            },1000)
+        </script>
+    </div>
+    <div class="quotation-and-picture-content">
+        <div class="quote-area">
+            <div class="quotation-section">
+                <div class="quote">
+                    <span >"A good Teacher is like a candle-it consumes itself to light the way for others."</span><br>
+                    <span id="auther1">- Mustafa Kemal Atatork</span>
+                </div>
+                <div class="quote">
+                    <Span >"Teaching is more than imparting knowledge. It is inspiring change. Learning is more than absorbing facts. It is 
+                    acquiring understanding"</Span><br>
+                    <span id="auther2">- William Arthur Ward</span>
+                </div>
+                <div class="quote">
+                    <span>"Intelligence plus character, that is the goal of education"</span><br>
+                    <span id="auther3" >- Martin Luther King</span>
+                </div>
+            </div>
+        </div>
+        <div class="picture-area2">
+            <div class="image-container2">
+                <div class="image">
+                    <img src="image1.png" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+            <script>
+                const quotations = document.querySelectorAll('.quote');
+                let currentQuotation = 0;
+
+                function displayQuote(){
+                    quotations.forEach((quote, index) => {
+                        if (index === currentQuotation){
+                            quote.style.opacity = 1;
+                        } else {
+                            quote.style.opacity = 0;
+                        }
+                    });
+                    currentQuotation = (currentQuotation + 1) % quotations.length;
+                }
+                displayQuote();
+                setInterval(displayQuote, 5000);
+            </script>
+        </div>
+    <footer class="footersection">
+        <div class="footer-div">
+            <div class="logo-footer-div">
+                FindYourTeacher
+            </div>
+            <div class="contactinfo-div">
+                Contact Us
+            </div>
+        </div>
+    </footer>
+</div>
+    
+</body>
+</html>
