@@ -1,193 +1,214 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Student Form</title>
-        <link rel="stylesheet" href="../../style.css">
-        <link rel="stylesheet" href="studentform.css">
-        <style>
-            .class1{
-                position: relative;
-                display: flex;
-            }
-            .class1-1{
-                flex:1;
-            }
-        </style>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+        }
+
+        header {
+            background: #1e3a8a;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            background: #2563eb;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 25px 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, select {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .inline-group label {
+            font-weight: normal;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .btn-row {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 25px;
+            border: none;
+            border-radius: 6px;
+            background: #1e3a8a;
+            color: white;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            margin-top: 40px;
+            background: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
 <body>
-    <header class="header-of-website" id="logo-col">
-        <div class="column">
-            <center>
-                            <div class="logo-section">
 
-            </div>
-            </center>
+<header>
+    <div><strong>FindYourTeacher</strong></div>
+    <div>Student Portal</div>
+</header>
 
+<nav>
+    <div>Home</div>
+    <div>Teachers</div>
+    <div>Institutions</div>
+    <div>About Us</div>
+</nav>
+
+<div class="container">
+    <h1>Student Registration Form</h1>
+
+    <form>
+
+        <div class="form-group">
+            <label>Name with Initials</label>
+            <input type="text" required>
         </div>
-        <div class="column" >
-            <div id="home-button">
-                <a href="index.html">
-                    <button id="homebtn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
-                    <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
-                  </svg>
-                </button>    
-                </a>
-            </div>
-            <div id="homedet">
-                Home
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" required>
+        </div>
+
+        <div class="form-group">
+            <label>Profile Photo</label>
+            <input type="file">
+        </div>
+
+        <div class="form-group">
+            <label>Age</label>
+            <input type="number" min="3" max="25" required>
+        </div>
+
+        <div class="form-group">
+            <label>District</label>
+            <select required>
+                <option value="">Select District</option>
+                <option>Colombo</option>
+                <option>Kandy</option>
+                <option>Galle</option>
+                <option>Jaffna</option>
+                <option>Kurunegala</option>
+                <option>Badulla</option>
+                <option>Matara</option>
+                <option>Anuradhapura</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Contact Number</label>
+            <input type="tel" required>
+        </div>
+
+        <div class="form-group">
+            <label>Grade Category</label>
+            <div class="inline-group">
+                <label><input type="radio" name="grade"> Grade 1–5</label>
+                <label><input type="radio" name="grade"> Grade 6–9</label>
+                <label><input type="radio" name="grade"> O/L</label>
+                <label><input type="radio" name="grade"> A/L</label>
             </div>
         </div>
-        <div class="column">
-            <div id="teacher-button">
-                <a href="#">
-                    <button id="teacherbtn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
-                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
-                  </svg>
-                </button>
-                </a>
-            </div>
-            <div id="teacherdet">
-                Teachers
+
+        <div class="form-group">
+            <label>Medium</label>
+            <div class="inline-group">
+                <label><input type="checkbox"> Sinhala</label>
+                <label><input type="checkbox"> English</label>
+                <label><input type="checkbox"> Tamil</label>
             </div>
         </div>
-        <div class="column">
-            <div id="institutions-button">
-                <a href="#">
-                    <button id="institutionbtn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
-                    <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/>
-                  </svg>                    
-                </button>
-                </a>
-                
-            </div>
-            <div id="institutedet">
-                Institutions
-            </div>
+
+        <div class="form-group">
+            <label>Username</label>
+            <input type="text" required>
         </div>
-        <div class="column">
-            <div id="aboutus-button">
-                <a href="#">
-                    <button id="about-usbtn">
-                   <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-file-earmark-person-fill" viewBox="0 0 16 16">
-                    <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755z"/>
-                  </svg> 
-                </button>
-                </a>
-            </div>
-            <div id="aboutusdet">
-                About us
-            </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" required>
         </div>
-    </header>
-<div class="table-class">
-    <form action="#" name="" class="">
-    <div class="mainclass">
-        <h1><u><b>Student Registration Form</b></u></h1>
-        <div class="class1">
-        <div class="class1-1">Name with Initials:</div>
-        <div class="class1-1"><input type="text"></div>
+
+        <div class="form-group">
+            <label>Retype Password</label>
+            <input type="password" required>
         </div>
-        <div class="class1">
-            <div class="class1-1">E-mail:</div>
-            <div class="class1-1"><input type="email"></div>
+
+        <h2>Guardian Details</h2>
+
+        <div class="form-group">
+            <label>Guardian Name</label>
+            <input type="text" required>
         </div>
-        <div class="class1">
-            <div class="class1-1">Profile photo:</div>
-            <div class="class1-1"><input type="file"></div>
-            </div>
-            <div class="class1">
-                <div class="class1-1">Age:</div>
-                <div class="class1-1"><input type="text"></div>
-                </div>
-                <div class="class1">
-                    <div class="class1-1">District:</div>
-                    <div class="class1-1">
-                        <select>
-                            <option value="puttalam">Puttalam</option>
-                            <option value="Ampara">Ampara</option>
-                            <option value="Anuradhapura">Anuradhapura</option>
-                            <option value="Badulla">Badulla</option>
-                            <option value="Batticaloa">Batticaloa</option>
-                            <option value="Colombo">Colombo</option>
-                            <option value="Galle">Galle</option>
-                            <option value="Galle">Gampaha</option>
-                            <option value="Hambantota">Hambantota</option>
-                            <option value="Jaffna">Jaffna</option>
-                            <option value="Kalutara">Kalutara</option>
-                            <option value="Kandy">Kandy</option>
-                            <option value="Kegalle">Kegalle</option>
-                            <option value="Kilinochchi">Kilinochchi</option>
-                            <option value="Kurunegala">Kurunegala</option>
-                            <option value="Mannar">Mannar</option>
-                            <option value="Matale">Matale</option>
-                            <option value="Vavuniya">Vavuniya</option>
-                            <option value="Trincomalee">Trincomalee</option>
-                            <option value="Ratnapura">Ratnapura</option>
-                            <option value="Polonnaruwa">Polonnaruwa</option>
-                            <option value="Nuwara-Eliya">Nuwara-Eliya</option>
-                            <option value="Monaragala">Monaragala</option>
-                            <option value="Mullativu">Mullativu</option>
-                            <option value="Matara">Matara</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="class1">
-                    <div class="class1-1">Contact Number:</div>
-                    <div class="class1-1"><input type="tel"></div>
-            </div>
-            <div class="class1">
-                <div class="class1-1">Grade:</div>
-                <div class="class1-1">
-                                        <input type="radio" name="grade" value="Grade-1-5">Grade 1-5 <br>
-                                        <input type="radio" name="grade" value="Grade-6-9">Grade 6-9 <br>
-                                        <input type="radio" name="grade" value="O/L">O/L <br>
-                                        <input type="radio" name="grade" value="A/L">A/L <br>
-                </div>
-            </div>
-                                <div class="class1">
-                                    <div class="class1-1">Medium:</div>
-                                    <div class="class1-1">
-                                        <input type="checkbox" name="medium" value="Sinhala ">Sinhala <br>
-                                        <input type="checkbox" name="medium" value="English">English <br>
-                                        <input type="checkbox" name="medium" value="Tamil">Tamil <br>
-                                    </div>
-                                </div>
-                                <div class="class1">
-                                <div class="class1-1">User name: </div>
-                                    <div class="class1-1"><input type="text" name="txtnme" size=7 placeholder="enter name"><br></div></div>
-                                <div class="class1">
-                                <div class="class1-1">Password:</div>
-                                <div class="class1-1"><input type="password" name="pwd" size=7 placeholder="password"><br></div></div>
-                                <div class="class1">
-                                <div class="class1-1">Password Retype:</div>
-                                <div class="class1-1"><input type="password" name="pwd" size=7 placeholder="password"><br></div></div>
-                                            <h2>Guardian Details:</h2>
-                                            <div class="class1">
-                                                <div class="class1-1">Name:</div>
-                                                <div class="class1-1"><input type="text"></div>
-                                                </div>
-                                                <div class="class1">
-                                                    <div class="class1-1">Contact Number:</div>
-                                                    <div class="class1-1"><input type="tel"></div>
-                                                </div>
-                                <div class="buttonclass">
-                                <div class="submitbuttonclass"><input type="submit" name="sub" value="Submit"></div>
-                                <div class="resetbuttonclass"><input type="reset" name="res" value="Reset"></div>
-                                <br>
+
+        <div class="form-group">
+            <label>Guardian Contact Number</label>
+            <input type="tel" required>
+        </div>
+
+        <div class="btn-row">
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </div>
+
+    </form>
 </div>
-</div>
-<footer class="footersection">
-    <div class="footer-div">
-        <div class="logo-footer-div">
-            FindYourTeacher
-        </div>
-        <div class="contactinfo-div">
-            Contact Us
-        </div>
-    </div>
+
+<footer>
+    Contact Us | FindYourTeacher System
 </footer>
+
 </body>
 </html>
