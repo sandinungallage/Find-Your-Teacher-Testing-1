@@ -1,0 +1,28 @@
+.main
+{
+width: 60%;
+}
+.section1
+{
+    position: relative;
+    display: flex;
+}
+.section1-1
+{
+    flex: 1;
+    padding: 2%;
+    text-align:left;
+}
+#propic{
+    position:relative;
+    display:flex;
+    text-align:left;
+}
+
+
+
+
+
+#primarygrades,.gradesixtonine,.ordinarylevel,.advancedlevel,.biomathsstream,.commercestream,.artstream{
+     display: none;
+} 
