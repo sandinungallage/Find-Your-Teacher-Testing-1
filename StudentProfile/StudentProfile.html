@@ -1,10 +1,205 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            Teacher form
-        </title>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+
+    <!-- Optional external CSS -->
+    <link rel="stylesheet" href="../css/forms.css">
+
+    <!-- Internal CSS (same as forms.css) -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+        }
+
+        header {
+            background: #1e3a8a;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            background: #2563eb;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav div {
+            cursor: pointer;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 25px 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 25px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input:disabled,
+        textarea:disabled {
+            background: #f1f5f9;
+        }
+
+        .inline-group label {
+            font-weight: normal;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .btn-row {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 25px;
+            border: none;
+            border-radius: 6px;
+            background: #1e3a8a;
+            color: white;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #163074;
+        }
+
+        footer {
+            margin-top: 40px;
+            background: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
 <body>
+
+<!-- ===== HEADER ===== -->
+<header>
+    <div><strong>FindYourTeacher</strong></div>
+    <div>Student Portal</div>
+</header>
+
+<!-- ===== NAVIGATION ===== -->
+<nav>
+    <div>Home</div>
+    <div>Teachers</div>
+    <div>Institutions</div>
+    <div>My Profile</div>
+    <div>Logout</div>
+</nav>
+
+<!-- ===== PROFILE CONTAINER ===== -->
+<div class="container">
+    <h1>Student Profile</h1>
+
+    <!-- ===== BASIC DETAILS ===== -->
+    <div class="form-group">
+        <label>Student Name</label>
+        <input type="text" value="Nimal Perera" disabled>
+    </div>
+
+    <div class="form-group">
+        <label>Email</label>
+        <input type="email" value="nimal@gmail.com" disabled>
+    </div>
+
+    <div class="form-group">
+        <label>Age</label>
+        <input type="text" value="17" disabled>
+    </div>
+
+    <div class="form-group">
+        <label>District</label>
+        <input type="text" value="Galle" disabled>
+    </div>
+
+    <div class="form-group">
+        <label>Contact Number</label>
+        <input type="text" value="0712345678" disabled>
+    </div>
+
+    <!-- ===== ACADEMIC DETAILS ===== -->
+    <h2>Academic Details</h2>
+
+    <div class="form-group">
+        <label>Grade Category</label>
+        <input type="text" value="Ordinary Level (O/L)" disabled>
+    </div>
+
+    <div class="form-group">
+        <label>Medium</label>
+        <textarea rows="2" disabled>Sinhala, English</textarea>
+    </div>
+
+    <!-- ===== GUARDIAN DETAILS ===== -->
+    <h2>Guardian Details</h2>
+
+    <div class="form-group">
+        <label>Guardian Name</label>
+        <input type="text" value="Sunil Perera" disabled>
+    </div>
+
+    <div class="form-group">
+        <label>Guardian Contact</label>
+        <input type="text" value="0779876543" disabled>
+    </div>
+
+    <!-- ===== ACTION BUTTONS ===== -->
+    <div class="btn-row">
+        <button>Edit Profile</button>
+        <button>Change Password</button>
+    </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    Contact Us | FindYourTeacher System
+</footer>
+
 </body>
 </html>
