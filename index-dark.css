@@ -1,46 +1,32 @@
-/* ===== WELCOME AREA DARK ===== */
-.welcome-area{
-    background-image: linear-gradient(#0f172a, #1e293b);
-}
-
-#message-01, #message-02{
-    color: #e2e8f0;
-    background-color: rgba(30,41,59,0.6);
-}
-
-/* ===== BUTTONS DARK ===== */
-.login-button{
-    background-color: #334155;
-    color: #e2e8f0;
-}
-.login-button:hover{
-    background-color: #475569;
-}
-
-.register-button{
-    background-color: #1d4ed8;
-}
-.register-button:hover{
-    background-color: #2563eb;
-}
-
-/* ===== CARDS DARK ===== */
-.card1-details,.card2-details,.card3-details{
-    background-color: rgba(30,41,59,0.7);
+body {
+    background: #0f172a;
     color: #e2e8f0;
 }
 
-.card1-details:hover,.card2-details:hover,.card3-details:hover{
-    background-color: #0f172a;
-    color: white;
+header, footer {
+    background: #0b1120;
 }
 
-/* ===== QUOTES DARK ===== */
-.quotation-section{
-    background-image: linear-gradient(#1e293b, #0f172a);
+nav {
+    background: #1e293b;
+}
+
+.welcome-area,
+.counting-card,
+.quote {
+    background: #1e293b;
     color: #e2e8f0;
+    box-shadow: 0 0 15px rgba(255,255,255,0.05);
 }
 
-.quote{
-    color: #f1f5f9;
+.author {
+    color: #94a3b8;
+}
+
+.login-button {
+    background: #334155;
+}
+
+.register-button {
+    background: #1d4ed8;
 }

@@ -1,142 +1,127 @@
-/* ===== WELCOME AREA ===== */
-.welcome-area{
-    height: 500px;
-    width: 100%;
-    background-image: linear-gradient(rgb(65,116,174), white);
-    backdrop-filter: blur(18px);
-    opacity: 0.95;
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    border-radius: 18px;
-    display: flex;
-    position: relative;
+    background: #f4f6f9;
+    color: #111;
 }
 
-.welcome-message-div{
-    width: 100%;
-    height: 480px;
+/* HEADER + NAV SAME AS FORM PAGE */
+header {
+    background: #1e3a8a;
+    color: white;
+    padding: 15px 30px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
 }
 
-#message-01, #message-02{
-    font-size: xxx-large;
-    font-weight: bold;
-    position: absolute;
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-    color: rgb(5,5,42);
-    border-radius: 18px;
-    padding: 2%;
-    background-color: rgba(255,255,255,0.25);
-    backdrop-filter: blur(18px);
-    box-shadow: 1px 1px 8px rgba(0,0,0,0.2);
-}
-
-#message-02{
-    opacity: 0;
-    transform: translateX(50%);
-}
-
-#image-div-of-firstdiv{
-    position: relative;
-    opacity: 0;
-    transition: all 1s ease-in-out;
-    flex: 1;
-    transform: translateX(50%);
-}
-
-/* ===== LOGIN BUTTONS ===== */
-.login-buttons{
-    width: 100%;
+nav {
+    background: #2563eb;
     display: flex;
     justify-content: center;
     gap: 40px;
-}
-
-.login-button, .register-button{
-    font-size: large;
-    padding: 12px 25px;
-    border-radius: 12px;
-    border: 0;
-    font-weight: bold;
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
-    transition: all 0.5s ease-in-out;
-}
-
-.login-button{
-    background-color: rgba(85,178,68,0.85);
-}
-.login-button:hover{
-    background-color: #a0ddb1;
-    box-shadow: none;
-}
-
-.register-button{
-    background-color: #4a98d6;
-    opacity: 0;
-}
-.register-button:hover{
-    background-color: rgb(42,109,27);
-    color:white;
-}
-
-/* ===== COUNTING CARDS ===== */
-.counting-details-div{
-    display: flex;
-    width: 99%;
-}
-
-.card1,.card2,.card3{
-    flex: 1;
-    text-align: center;
-    transform: translateY(-80%);
-    opacity: 0;
-    transition: all 0.6s ease-in-out;
-}
-
-.card1-details,.card2-details,.card3-details{
-    background-color: rgba(197,197,197,0.6);
-    backdrop-filter: blur(15px);
-    box-shadow:0px 2px 6px #00000026;
-    border-radius: 18px;
-    padding: 2%;
-    transition: all 0.6s ease-in-out;
-}
-
-.card1-details:hover,.card2-details:hover,.card3-details:hover{
-    background-color: rgb(72,76,79);
+    padding: 10px;
     color: white;
-    box-shadow: none;
-}
-
-/* ===== QUOTATION AREA ===== */
-.quotation-and-picture-content{
-    display: flex;
-    width: 99%;
-    height: 500px;
-}
-
-.quote-area{ flex: 40%; padding: 2%; }
-.picture-area2{ flex: 60%; text-align: center; }
-
-.quotation-section{
-    text-align: center;
-    border-radius: 18px;
-    min-height: 230px;
-    top: 100px;
-    padding: 2%;
-    position: relative;
-    box-shadow:0px 3px 10px #00000045;
-    backdrop-filter: blur(25px);
-    background-image: linear-gradient(white, rgba(167,168,171,0.74));
-}
-
-.quote{
-    font-size: x-large;
     font-weight: bold;
-    position: absolute;
-    top: 65px;
+}
+
+/* WELCOME AREA */
+.welcome-area {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+}
+
+.welcome-message {
+    font-size: 26px;
+    font-weight: bold;
+    color: #1e3a8a;
+    transition: opacity 1s ease-in-out;
+}
+
+#welcome-img {
+    max-width: 280px;
+    margin-top: 20px;
     opacity: 0;
-    transition: opacity 2s ease-in-out;
+    transform: translateX(-10%);
+    transition: all 1s ease-in-out;
+}
+
+/* BUTTONS */
+.login-buttons {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.login-button, .register-button {
+    padding: 10px 25px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    background: #1e3a8a;
+    color: white;
+}
+
+.register-button {
+    background: #2563eb;
+    opacity: 0;
+}
+
+/* COUNTING CARDS */
+.counting-details {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.counting-card {
+    background: white;
+    padding: 25px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.08);
+    font-size: 22px;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(10%);
+    transition: all 1s ease-in-out;
+    color: #1e3a8a;
+}
+
+/* QUOTES */
+.quotation-area {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 20px;
+}
+
+.quote {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.08);
+    max-width: 300px;
+    opacity: 0;
+    transition: opacity 1s;
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+.author {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+/* FOOTER */
+footer {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
 }
