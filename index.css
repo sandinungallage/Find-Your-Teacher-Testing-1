@@ -25,6 +25,17 @@ nav {
     font-weight: bold;
 }
 
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
 /* WELCOME AREA */
 .welcome-area {
     text-align: center;
